@@ -1,0 +1,200 @@
+@font-face {
+    font-family:'Cousine_Bold';
+    src: url('/users/nolanthompson/library/fonts/cousine-bold.ttf');
+}
+
+@font-face {
+    font-family:'hikarumono-regular';
+    src: url('/users/nolanthompson/library/fonts/hikarumono-regular.otf');
+}
+
+@font-face {
+  font-family:'inclusive_sans';
+  src: url('/Users/nolanthompson/Library/Fonts/InclusiveSans-Regular.ttf');
+}
+
+@font-face {
+  font-family:'phosphene-regular';
+  src: url('/Users/nolanthompson/Library/Fonts/PhospheneFont-Regular.ttf');
+}
+
+
+body {
+    background-color: #000000;
+}
+body #title {
+    font-family: 'Cousine_Bold', sans-serif;
+    color: rgb(191, 255, 0);
+    font-size: 5.1vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure the overlay is on top of other content */
+    filter: blur(1px);
+        -webkit-filter: blur(2px);
+}
+
+body #title_half {
+    font-family:'Cousine_Bold', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 5vw;
+    position: fixed;
+    top: 0;
+    left: 0vw;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure the overlay is on top of other content */
+    opacity: 80%;
+    filter: blur(20px);
+        -webkit-filter: blur(3px);
+}
+body #title_two {
+    font-family: 'hikarumono-regular', sans-serif;
+    color: rgb(200, 200, 200);
+    font-size: 8vw;
+    position: fixed;
+    top: 0vw;
+    left: 7vw;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure the overlay is on top of other content */
+  
+}
+
+body #title_three {
+    font-family: 'Cousine_Bold', sans-serif;
+    color: rgb(0,0, 255);
+    font-size: 2vw;
+    position: fixed;
+    top: 2vw;
+    right: 2vw;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    z-index: 9999; /* Ensure the overlay is on top of other content */
+    filter: blur(3px);
+        -webkit-filter: blur(2px);
+}
+
+.button-style {
+    background-color: black;
+    font-family: 'inclusive_sans', sans-serif;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    padding: .5vw 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    margin: 1vw;
+    transition: background-color 0.3s ease, color 0.3s ease;;
+  }
+
+  .button-style:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+  }
+
+  .label-style {
+    font-family: 'inclusive_sans', sans-serif;
+    color: white;
+    font-size: 1vw;
+    margin: 1vw;
+  }
+
+
+  input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 100%; /* Set width to fill its container */
+    height: 1vw; /* Set height */
+    background-color: #000000; /* Background color of the track */
+    border-radius: 1vw; /* Set border radius */
+  }
+  
+  /* Styles for the slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px; /* Height of the track */
+    background-color: #ffffff; /* Background color of the track */
+    border-radius: 5px; /* Set border radius */
+  }
+  
+  /* Styles for the slider thumb (the draggable handle) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 15px; /* Width of the thumb */
+    height: 15px; /* Height of the thumb */
+    background-color: #ff9aff; /* Color of the thumb */
+    border-radius: 50%; /* Make the thumb round */
+  }
+  
+  /* Styles for the thumb when it's being dragged */
+  input[type="range"]:active::-webkit-slider-thumb {
+    background-color: #fd52fd; /* Change color when active */
+  }
+  
+  /* Styles for the thumb when it's hovered over */
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: #fd52fd; /* Change color when hovered */
+  }
+
+  .info {
+    font-family: 'inclusive_sans', sans-serif;
+    color: white;
+    position: absolute;
+    top: 650px;
+    left: 50px;
+    font-size: 1vw;
+  }
+
+  .info #title_info {
+    font-family: 'phosphene-regular';
+    font-size: 3vw;
+
+  }
+
+  img {
+    width: 60px;
+    position: absolute;
+    right: 10px;
+    bottom:10px;
+
+  }
+
+  a {
+    color:  #ff9aff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: rgb(212, 255, 0);
+
+  }
+
+  header {
+    font-family: 'phosphene-regular', sans-serif;
+    font-size: 2vw;
+
+  }
